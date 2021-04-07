@@ -1,0 +1,27 @@
+specVersion: 0.0.2
+description: PYE for Ethereum
+repository: https://github.com/stereoIII6/pyegraph
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: PyeGraph
+    network: mainnet
+    source:
+      address: "0x9fb5B5DF9071A8E152DeaA254073BFc9e5313D19"
+      abi: PyeGraph
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - Pye
+      abis:
+        - name: PyeGraph
+          file: PyeGraph\abis\PyeGraph.json
+      eventHandlers:
+        - event: NewPye(uint256,address,string,string,string,address,uint256)
+          handler: handleNewPye
+        - event: UpdatedPye(uint256,address,string,string,string,address,uint256)
+          handler: handleUpdatedPye
+      file: PyeGraph\PyeGraph.wasm

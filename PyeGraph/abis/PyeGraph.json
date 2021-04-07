@@ -1,0 +1,251 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "pyes",
+    "outputs": [
+      {
+        "name": "artist",
+        "type": "address"
+      },
+      {
+        "name": "artistName",
+        "type": "string"
+      },
+      {
+        "name": "pyeObject",
+        "type": "string"
+      },
+      {
+        "name": "hashed",
+        "type": "string"
+      },
+      {
+        "name": "frxAddress",
+        "type": "address"
+      },
+      {
+        "name": "frxCap",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "address"
+      },
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "PYES4Artist",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "artist4PYE",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "artist",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "artistName",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "pyeObject",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "hashed",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "frxAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "frxCap",
+        "type": "uint256"
+      }
+    ],
+    "name": "NewPye",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "artist",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "artistName",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "pyeObject",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "hashed",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "frxAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "frxCap",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdatedPye",
+    "type": "event"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_artistName",
+        "type": "string"
+      },
+      {
+        "name": "_pyeObject",
+        "type": "string"
+      },
+      {
+        "name": "_hashed",
+        "type": "string"
+      }
+    ],
+    "name": "createPYE",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "artist",
+        "type": "address"
+      },
+      {
+        "name": "artwork",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPYE",
+    "outputs": [
+      {
+        "name": "",
+        "type": "string"
+      },
+      {
+        "name": "",
+        "type": "string"
+      },
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_id",
+        "type": "uint256"
+      },
+      {
+        "name": "_frxAddress",
+        "type": "address"
+      },
+      {
+        "name": "_frxCap",
+        "type": "uint256"
+      }
+    ],
+    "name": "updatePYE",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "setMythicalPYE",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

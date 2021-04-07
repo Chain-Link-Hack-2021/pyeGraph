@@ -1,0 +1,9 @@
+type Pye @entity {
+  id: ID!
+  artist: Bytes!
+  artistName: String!
+  pyeObject: String!
+  hashed: String!
+  frxAddress: Bytes!
+  frxCap: String!
+}
